@@ -4,52 +4,37 @@ void DaftarFilm() {
     printf("======= Film Yang Akan Tayang=======");
 }
 
+struct Film {
+    char judul_film[30];
+    char rating_usia[5];
+    char genre[15];
+    int durasi;
+    char tayang[20];
+};
+
 int main() {
-    char film[5][20] = {
-        "A",
-        "B",
-        "C",
-        "D",
-        "E"
+    struct Film daftar_film[jumlah_film] = {
+        /*{judul, rating usia, genre, durasi,  jadwal tayang},*/
+        {"A", "13+", "Horror", 90,  "19:30/02/07/2025"},
+        {"B", "21+", "Komedi Dewasa", 30, "kecha"},
+        {"C", "2+",  "Anak", 120, "kecha"},
+        {"D", "2+",  "Anak", 60,  "kecha"},
+        {"E", "13+", "Thriller", 120, "kecha"}
     };
 
-    char rating_usia[5][5] = {
-        "13+",
-        "21+",
-        "2+",
-        "2+",
-        "13+"
-    };
-
-    char genre_film[5][20] = {
-        "Horror",
-        "Komedi Dewasa",
-        "Anak",
-        "Anak",
-        "Thriller"
-    };
-
-    int durasi[5] = {
-        90,
-        30,
-        120,
-        60,
-        120
-    };
-    char tayang[5][20] = {
-        "19:30/02/07/2025", 
-        "kecha",
-        "kecha",
-        "kecha",
-        "kecha"};
-
-    printf("====================================================================================================================\n");
-    printf("| %-2s | %-30s | %-8s | %-20s | %-10s | %-20s |\n", "NO", "Judul Film", "Rating Usia", "Genre", "Durasi (menit)", "Tayang Perdana");
-    printf("====================================================================================================================\n");
-    for (int i; i < jumlah_film; i++) {
-        printf("| %-2d | %-30s | %-11s | %-20s | %-14d | %-20s |\n", i+1, film[i], rating_usia[i], genre_film[i], durasi[i], tayang[i]);
+    printf("=====================================================================================================================\n");
+    printf("| %-2s | %-30s | %-12s | %-20s | %-14s | %-20s |\n", "NO", "Judul Film", "Rating Usia", "Genre", "Durasi (menit)", "Tayang Perdana");
+    printf("=====================================================================================================================\n");
+    for (int i = 0; i < jumlah_film; i++) {
+        printf("| %-2d | %-30.30s | %-12.12s | %-20.20s | %-14d | %-20.20s |\n", 
+            i+1, 
+            daftar_film[i].judul_film, 
+            daftar_film[i].rating_usia, 
+            daftar_film[i].genre, 
+            daftar_film[i].durasi, 
+            daftar_film[i].tayang);
     }
-    printf("====================================================================================================================\n");
+    printf("=====================================================================================================================\n");
 
     return 0;
 }
