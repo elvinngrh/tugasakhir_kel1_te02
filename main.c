@@ -14,12 +14,12 @@ struct Film {
 
 int main() {
     struct Film daftar_film[jumlah_film] = {
-        /*{judul, rating usia, genre, durasi,  jadwal tayang},*/
-        {"A", "13+", "Horror", 90,  "19:30/02/07/2025"},
-        {"B", "21+", "Komedi Dewasa", 30, "kecha"},
-        {"C", "2+",  "Anak", 120, "kecha"},
-        {"D", "2+",  "Anak", 60,  "kecha"},
-        {"E", "13+", "Thriller", 120, "kecha"}
+        /*{judul, rating usia, genre, harga satu tiket,  jadwal tayang},*/
+        {"A", "13+", "Horror", 90.000,  "19:30/02/07/2025"},
+        {"B", "21+", "Komedi Dewasa", 30.000, "kecha"},
+        {"C", "2+",  "Anak", 120.000, "kecha"},
+        {"D", "2+",  "Anak", 60.000,  "kecha"},
+        {"E", "13+", "Thriller", 120.000, "kecha"}
     };
 
     printf("=====================================================================================================================\n");
