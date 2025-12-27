@@ -1,5 +1,0 @@
-1|Nama Film|100
-2|Nama Film|100
-3|Nama Film|100
-4|Nama Film|100
-5|Nama Film|100
