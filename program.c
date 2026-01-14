@@ -88,7 +88,7 @@ int add_booking(int pilihan) {
     strcpy(b1.jadwal_tayang, film[pilihan - 1].tayang);
     b1.id = pilihan;
     b1.total_pembayaran = total_harga(pilihan, b1.jumlah_tiket);
-    fprintf(fp, "| %-2d | %-30s | %-25s | %-20s | %-14d | Rp.%-17d |\n",
+    fprintf(fp, "| %-2d | %-30s | %-25s | %-20s | %-14d | Rp%-17d |\n",
             b1.id,
             b1.pemesan,
             b1.judul,
@@ -144,7 +144,7 @@ void tabel_film() {
     printf("====================================================================================================\n");
 
     for (int i = 0; i < JUMLAH_FILM; i++) {
-        printf("| %-2d | %-30s | %-10s | %-15s | Rp.%-7s | %-15s |\n",
+        printf("| %-2d | %-30s | %-10s | %-15s | Rp%-7s | %-15s |\n",
                i + 1,
                film[i].judul_film,
                film[i].rating_usia,
