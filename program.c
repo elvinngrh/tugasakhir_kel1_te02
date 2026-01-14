@@ -25,11 +25,11 @@ struct Booking {
 };
 
 void Daftar_Film(struct Film film[]) {
-    char judul_film[JUMLAH_FILM][20] = {"Interstellar", "Avengers", "C", "D", "E"};
-    char rating_usia[JUMLAH_FILM][20] = {"13+", "21+", "2+", "2+", "13"};
-    char genre[JUMLAH_FILM][20] = {"Horror", "Komedi", "Anak", "Anak", "Thriller"};
-    char harga[JUMLAH_FILM][20] = {"90000", "120000", "30000", "65000", "100000"};
-    char tanggal[JUMLAH_FILM][20] = {"19/07/2025", "20/07/2025", "21/07/2025", "22/07/2025", "23/07/2025"};
+    char judul_film[JUMLAH_FILM][20] = {"Interstellar", "The Avengers", "Jumbo", "Boboiboy The Movie", "Insidious"};
+    char rating_usia[JUMLAH_FILM][20] = {"13+", "13+", "SU", "7+", "17+"};
+    char genre[JUMLAH_FILM][20] = {"Sci-Fi, Petualangan", "Aksi, Superhero", "Keluarga, Anak", "Aksi, Fantasi", "Horror, Thriller"};
+    char harga[JUMLAH_FILM][20] = {"50000", "60000", "40000", "45000", "50000"};
+    char tanggal[JUMLAH_FILM][20] = {"4/01/2026", "20/01/2026", "1/02/2026", "17/02/2026", "9/03/2026"};
 
     for (int i = 0; i < JUMLAH_FILM; i++) {
         strcpy(film[i].judul_film, judul_film[i]);
